@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
 h1 {
     margin: 20px 0; 
@@ -29,28 +29,34 @@ img {
     height: auto;
 }
 
-.container {
+.flex {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+/* Container 1    */
+.container {
     width: 1000px;
     height: auto;
-    border: 2px solid green;
-    margin: 20px 20px 20px 20px;
+    border: 5px solid green;
+    margin: auto;
+}
+
+.ligne {
+    flex-direction: row;
+    border: 3px dashed blue;
 }
 
 .item {
-    border: 2px solid red;
-    padding: 15px;
-    text-align: center;
     width: 100px;
     height: 100px; 
-}
-
-.layout-1 .row {
-    display: flex;
-    flex-direction: row;;
-    justify-content: space-around;
+    border: 2px solid red;
+    text-align: center;
 }
 
 .layout-2 .row {

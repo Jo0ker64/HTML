@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Flexbox</title>
+    <title>Flexbox</title>
     <link rel="stylesheet" href="./CSS/styleflex.css">
     <link rel="shortcut icon" href="./flexbox1.png" type="image/x-icon">
 </head>
@@ -22,21 +21,22 @@
             </article>
             <article class="layout layout-1">
                 <h2>Layout 1</h2>
+                <!-- raccourci emmet : div.container>div.row*3>div.item*3 -->
                 <div class="container">
-                    <div class="row">
-                        <div class="item">Elem 1</div>
-                        <div class="item">Elem 2</div>
-                        <div class="item">Elem 3</div>
+                    <div class="ligne flex justify-content-around">
+                        <div class="item">1</div>
+                        <div class="item">2</div>
+                        <div class="item">3</div>
                     </div>
-                    <div class="row">
-                        <div class="item">Elem 4</div>
-                        <div class="item">Elem 5</div>
-                        <div class="item">Elem 6</div>
+                    <div class="ligne flex justify-content-around">
+                        <div class="item">4</div>
+                        <div class="item">5</div>
+                        <div class="item">6</div>
                     </div>
-                    <div class="row">
-                        <div class="item">Elem 7</div>
-                        <div class="item">Elem 8</div>
-                        <div class="item">Elem 9</div>
+                    <div class="ligne flex justify-content-around">
+                        <div class="item">7</div>
+                        <div class="item">8</div>
+                        <div class="item">9</div>
                     </div>
                 </div>
             </article>
@@ -52,17 +52,17 @@
             <article class="layout layout-2">
                 <h2>Layout 2</h2>
                 <div class="container">
-                    <div class="row row-top-2">
+                    <div class="ligne flex row-top-2">
                         <div class="item">Elem 1</div>
                         <div class="item">Elem 2</div>
                         <div class="item">Elem 3</div>
                     </div>
-                    <div class="row row-middle-2">
+                    <div class="ligne flex row-middle-2">
                         <div class="item">Elem 4</div>
                         <div class="item">Elem 5</div>
                         <div class="item">Elem 6</div>
                     </div>
-                    <div class="row row-bottom-2">
+                    <div class="ligne flex row-bottom-2">
                         <div class="item">Elem 7</div>
                         <div class="item">Elem 8</div>
                         <div class="item">Elem 9</div>
@@ -80,17 +80,17 @@
             <article class="layout layout-3">
                 <h2>Layout 3</h2>
                 <div class="container">
-                    <div class="row row-top-2">
+                    <div class="ligne flex row-top-2">
                         <div class="item">Elem 1</div>
                         <div class="item item-space">Elem 2</div>
                         <div class="item item-large">Elem 3</div>
                     </div>
-                    <div class="row row-middle-2">
+                    <div class="ligne flex row-middle-2">
                         <div class="item">Elem 4</div>
                         <div class="item">Elem 5</div>
                         <div class="item">Elem 6</div>
                     </div>
-                    <div class="row row-bottom-2">
+                    <div class="ligne flex row-bottom-2">
                         <div class="item item-large">Elem 7</div>
                         <div class="item item-space">Elem 8</div>
                         <div class="item">Elem 9</div>

@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+    padding:  20px 20px 20px 20px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    padding:  20px 20px 20px 20px;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    border: 5px solid green;
+    margin: auto;
+}
+
+.ligne {
+    flex-direction: row;
+    border: 3px dashed blue;
+}
+
+.element {
+    width: 100px;
+    height: 100px; 
+    border: 2px solid red;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+#ligne1 {
+    justify-content: flex-start; /* Éléments flexibles groupés au début */
+}
+
+#ligne2{
+    justify-content: flex-end;  /* Éléments flexibles groupés à la fin */
+}
+
+#ligne3{
+    justify-content: center; /* Éléments groupés au centre */
+}
+
+#ligne4{
+    justify-content: space-between; /* Les éléments sont répartis équitablement
+    Le bord du premier est aligné sur le
+    début du conteneur et la fin du dernier
+    est alignée sur la fin du conteneur */
+}
+
+#ligne5{
+    justify-content: space-around; /* Les éléments sont répartis équitablement
+    À chaque extrémité, entre le bord du
+    conteneur et le premier/dernier élément
+    on a la moitié de l'espace appliqué entre
+    chaque élément */
+}
+
+#ligne6{
+    justify-content: space-evenly; /* Les éléments sont répartis équitablement
+    Tous les éléments sont séparés par le même
+    espace */
+}
+
+#ligne7{
+    justify-content: start; /* Éléments groupés au début */
+}
+
+#ligne8{
+    justify-content: end; /* Éléments groupés à la fin */
+}
+
+#ligne9{
+    justify-content: left; /* Éléments groupés à gauche */
+}
+
+#ligne10{
+    justify-content: right; /* Éléments groupés à droite */
+}
+
+#ligne11{
+    justify-content: stretch;
+}
+
+/*   GRID */
+/* ============================= */
+/* Example 1: Grid with Named Areas */
+/* ============================= */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    width: 80%;
+    border: 5px solid green;
+    padding: 10px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed blue;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* ============================= */
+/* Example 2: Grid Alignments */
+/* ============================= */
+.align-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px;
+    justify-content: space-evenly; /* Controls horizontal alignment */
+    align-content: center; /* Controls vertical alignment */
+    justify-items: center; /* Aligns items horizontally within their cells */
+    align-items: center; /* Aligns items vertically within their cells */
+    gap: 10px;
+    width: 80%;
+    border: 5px solid green;
+    padding: 10px;
+    margin: auto;
+}
+
+.align-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+    height: 100px;
+    width: 100px;
+}
